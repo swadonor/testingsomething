@@ -9,18 +9,14 @@ body {
   color: #fff;
 }
 
-
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    -webkit-backdrop-filter: blur(6px);
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 999;
 }
-
-
 .header.scrolled {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -29,7 +25,6 @@ body {
   position: relative;
   width: 1920px;
   margin: 0 auto;
-
   padding-left: 162px;
   padding-right: 50px; 
   display: flex;
@@ -621,6 +616,8 @@ body {
   font-size: 20px;
   color: #D5C9BE;
 }
+
+/* Existing media queries for adaptive layout */
 @media (max-width: 1400px) {
   .banner {
     width: 100%;
@@ -706,5 +703,44 @@ body {
   .form-button {
     height: 60px;
     font-size: 14px;
+  }
+}
+
+/* Дополнительная адаптация для экранов с шириной до 320px */
+@media (max-width: 320px) {
+  .header-inner {
+    padding: 0 10px;
+  }
+  .logo {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .menu li a {
+    font-size: 12px;
+  }
+  .banner-title {
+    font-size: 24px;
+  }
+  .banner-subtitle {
+    font-size: 16px;
+  }
+  .btn-order {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .form-title {
+    font-size: 20px;
+  }
+  .form-input {
+    padding: 6px;
+    font-size: 10px;
+  }
+  .form-button {
+    height: 50px;
+    font-size: 12px;
   }
 }
